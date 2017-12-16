@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+	
+		<style>
+			.nav-wrapper ul li.logo a span {
+	font-size: 1.30rem;
+}
+.nav-wrapper ul li.logo a img {
+	height: 42px;
+	margin: 11px 15px 11px 0;
+}
+.nav-wrapper ul li.logo a {
+	height: 64px;
+}
+.nav-wrapper ul li.vertical-divider {
+	width: 1px;
+	height: 24px;
+	margin: 20px 10px;
+}
+.nav-wrapper ul.hide-on-med-and-down li a svg {
+	width: 24px;
+	height: 24px;
+	margin: 20px 15px 0 0;
+}
+.nav-wrapper ul.side-nav li a svg {
+	width: 24px;
+	height: 24px;
+	margin: 12px 32px 0 0;
+	fill: rgba(0,0,0,0.54);
+}
+.nav-wrapper ul ul.dropdown-content li a {
+	color: rgba(0, 0, 0, 0.87);
+}
+.nav-wrapper ul li.account a {
+	max-height: 56px;
+}
+.nav-wrapper ul li.account a {
+	max-height: 56px;
+}
+.nav-wrapper ul li.account a img {
+	width: 28px;
+	margin-top: 14px;
+}
+#contatore-notifiche {
+	margin-left: -10px;
+}
+.navbar-fixed {
+	z-index: 9999;
+}
+.side-nav {
+	border: 0;
+	width: 250px;
+	top: 56px;
+}
+.nav-wrapper a.logo {
+	font-size: 20px;
+}
+.side-nav .wrapper {
+	min-height: 100%;
+	margin-bottom: -104px;
+}
+.side-nav .wrapper .push, .side-nav li.copyright {
+	height: 104px;
+}
+.side-nav li.copyright a {
+	color: #9e9e9e;
+	font-size: 10px;
+	font-weight: 400;
+	padding: 9px 16px;
+	line-height: 15px;
+}
+@media only screen and (min-width: 601px) {
+	.nav-wrapper a.logo {
+		line-height: 64px;
+		height: 64px;
+	}
+	.side-nav {
+		top: 64px;
+	}
+	.nav-wrapper ul li.account a {
+		max-height: 64px;
+	}
+	.nav-wrapper ul li.account a img {
+		width: 32px;
+		margin-top: 16px;
+	}
+	.side-nav .wrapper {
+		margin-bottom: -112px;
+	}
+	.side-nav .wrapper .push, .side-nav li.copyright {
+		height: 112px;
+	}
+}
+		</style>
+	
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+		<!-- Barra di navigazione -->
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper blue white-text">
+					<!-- Account -->
+					<ul class="right">
+						
+					
+						<li class="hide-on-small-only">
+							<a class="btn waves-effect white blue-text" href="#">Accedi</a>
+						</li>
+						<li class="hide-on-med-and-up">
+							<a href="#"><i class="material-icons">account_circle</i></a>
+						</li>
+					
+					</ul>
+					<!-- Dispositivi L -->
+					<ul class="left hide-on-med-and-down">
+						<li class="logo">
+							<a class="white-text" href="#">
+								<span>Nome logo</span>
+							</a>
+						</li>
+						<li>
+							<a class="dropdown-button white-text" data-activates="notizie" data-hover="true" data-beloworigin="true" data-constrainwidth="false">
+								
+								<svg style="" viewBox="0 0 24 24">
+									<path fill="#ffffff" d="M20,11H4V8H20M20,15H13V13H20M20,19H13V17H20M11,19H4V13H11M20.33,4.67L18.67,3L17,4.67L15.33,3L13.67,4.67L12,3L10.33,4.67L8.67,3L7,4.67L5.33,3L3.67,4.67L2,3V19A2,2 0 0,0 4,21H20A2,2 0 0,0 22,19V3L20.33,4.67Z" />
+								</svg>
+								
+								Notizie
+							</a>
+						</li>
+						<ul id="notizie" class="dropdown-content">
+							<li>
+								<a href="#">
+									Notizie
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									SGB News
+								</a>
+							</li>
+						</ul>
+						
+						<li>
+							<a class="white-text">
+								<i class="material-icons left">event</i>
+								Calendario
+							</a>
+						</li>
+						
+						<li>
+							<a class="dropdown-button white-text" data-activates="utilita" data-hover="true" data-beloworigin="true" data-constrainwidth="false">
+								<i class="material-icons left">build</i>
+								Utilità
+							</a>
+						</li>
+						<ul id="utilita" class="dropdown-content">
+							<li>
+								<a href="#">
+									Scadenze
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Link utili
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									Trasporti
+								</a>
+							</li>
+						</ul>
+						
+						<li>
+							<a class="white-text">
+								<i class="material-icons left">feedback</i>
+								Feedback
+							</a>
+						</li>
+						
+						
+					</ul>
+					
+					<!-- Dispositivi S M -->
+					<a class="button-collapse" data-activates="slide-out">
+						<i class="material-icons white-text">menu</i>
+					</a>
+					<a class="hide-on-large-only logo truncate white-text" href="#">
+						Nome logo
+					</a>
+					<ul id="slide-out" class="side-nav collapsible" data-collapsible="accordion">
+						<div class="wrapper">
+							<li>
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header">
+											Notizie
+										</a>
+										<div class="collapsible-body">
+											<ul>
+												<li>
+													<a href="#">
+														Notizie
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														SGB News
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							
+							<li>
+								<a>
+									<i class="material-icons">event</i>
+									Calendario
+								</a>
+							</li>
+							
+							<li>
+								<ul class="collapsible collapsible-accordion">
+									<li>
+										<a class="collapsible-header">
+											<i class="material-icons">build</i>
+											Utilità
+										</a>
+										<div class="collapsible-body">
+											<ul>
+												<li>
+													<a href="#">
+														Scadenze
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Link utili
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														Trasporti
+													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</li>
+							
+							<li>
+								<a>
+									<i class="material-icons">feedback</i>
+									Feedback
+								</a>
+							</li>
+							
+						</div>
+					<ul>
+					
+				</div>
+			</nav>
+		</div>
+		
+		<div class="container">
+			<br><br><br><br>
+			<div class="row">
+				<div class="col s4">
+					<div class="card-panel center">
+						<i class="material-icons medium hide-on-small-only">event</i><br>
+						<i class="material-icons hide-on-med-and-up">event</i><br>
+						Scadenze
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card-panel center">
+						<i class="material-icons medium">event</i><br>
+						Scadenze
+					</div>
+				</div>
+				<div class="col s4">
+					<div class="card-panel center">
+						<i class="material-icons medium">event</i><br>
+						Scadenze
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+	  <script>
+			//Alla fine del caricamento del documento.
+			$(document).ready(function()
+			{
+				//Inizializzazioni componenti.
+				$(".button-collapse").sideNav();
+				
+			});
+	  </script>
+    </body>
+  </html>
